@@ -1,0 +1,16 @@
+{
+  "name": "docs.online",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "lynn jiang",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "deploy": "bash deploy.sh"
+  },
+  "devDependencies": {
+    "vuepress": "^1.5.2",
+    "vuepress-theme-vdoing": "^1.3.5"
+  }
+}
