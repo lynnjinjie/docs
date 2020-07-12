@@ -16,12 +16,13 @@ if [ -z "$GITHUB_TOKEN" ]; then
   githubUrl=git@github.com:lynnjinjie/docs.git
 else
   msg='来自github actions的自动部署'
-  githubUrl=https://lynnjinjie:${GITHUB_TOKEN}@github.com:lynnjinjie/docs.git
+  githubUrl=https://lynnjinjie:${GITHUB_TOKEN}@github.com/lynnjinjie/docs.git
   git config --global user.name "lynnjinjie"
   git config --global user.email "lynnjinjie@gmail.com"
 fi
 
 git init
+git add -A
 git commit -m "${msg}"
 git push -f $githubUrl master:gh-pages # 推送到github
 
