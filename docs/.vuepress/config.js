@@ -56,17 +56,21 @@ module.exports = {
     lineNumbers: false, // 代码块显示行号
   },
   themeConfig: {
+    // algolia: {
+    //   apiKey: '8e8c2611a9abd03fea86ab567410c7a3',
+    //   indexName: 'docsSearch',
+    // },
     displayAllHeaders: true,
     nav,
     sidebarDepth: 2, // 侧边栏显示2/
     sidebar: 'structuring',
     // logo: '/images/kuai.jpeg',
-    repo: 'lynnjiang', // 导航栏右侧生成Github链接
     searchMaxSuggestions: 10, // 搜索结果显示最大数
     lastUpdated: '上次更新', // 更新的时间，及前缀文字   string | boolean (取值为git提交时间)
-    // docsDir: 'docs', // 编辑的文件夹
-    // editLinks: true, // 启用编辑
-    // editLinkText: '编辑',
+    repo: 'lynnjinjie/docs', // github仓库地址
+    docsDir: 'docs', // 编辑的文件夹
+    editLinks: true, // 启用编辑
+    editLinkText: '编辑',
     // 以下配置是Vdoing主题改动的和新增的配置
     // category: false, // 是否打开分类功能，默认true。 如打开，会做的事情有：1. 自动生成的frontmatter包含分类字段 2.页面中显示与分类相关的信息和模块 3.自动生成分类页面（在@pages文件夹）。如关闭，则反之。
     // tag: false, // 是否打开标签功能，默认true。 如打开，会做的事情有：1. 自动生成的frontmatter包含标签字段 2.页面中显示与标签相关的信息和模块 3.自动生成标签页面（在@pages文件夹）。如关闭，则反之。
@@ -117,9 +121,9 @@ module.exports = {
     },
     footer: {
       // 页脚信息
-      createYear: 2019, // 博客创建年份
+      createYear: 2020, // 博客创建年份
       copyrightInfo:
-        'Lynn Jiang | <a href="javascript:;" target="_blank">苏ICP备19047804号</a>', // 博客版权信息，支持a标签
+        'Lynn Jiang | <a href="http://beian.miit.gov.cn/" target="_blank">苏ICP备19047804号</a>', // 博客版权信息，支持a标签
     },
   },
   // 插件
