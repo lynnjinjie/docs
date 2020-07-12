@@ -25,7 +25,7 @@ module.exports = [
     text: '其他',
     link: '/other/',
     items: [
-      { text: '收藏', link: '/pages/69d92f/' },
+      { text: '收藏', link: '/pages/e6f710/' },
       {
         text: 'Think',
         link: '/pages/caeaa7/',
