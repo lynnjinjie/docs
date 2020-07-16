@@ -24,6 +24,23 @@ module.exports = {
       'script',
       { src: 'https://cdn.jsdelivr.net/npm/numerify/lib/index.umd.min.js' },
     ],
+    // 添加algolia索引
+    [
+      'script',
+      {
+        src:
+          'https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js',
+      },
+    ],
+    [
+      'link',
+      {
+        rel: 'stylesheet',
+        type: 'text/css',
+        href:
+          'https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css',
+      },
+    ],
     // 注入到当前页面的 HTML <head> 中的标签
     ['link', { rel: 'icon', href: '/images/icons/page_80x80.png' }], // 增加一个自定义的 favicon(网页标签的图标)
     ['link', { rel: 'manifest', href: '/manifest.json' }],
@@ -56,10 +73,10 @@ module.exports = {
     lineNumbers: false, // 代码块显示行号
   },
   themeConfig: {
-    // algolia: {
-    //   apiKey: '8e8c2611a9abd03fea86ab567410c7a3',
-    //   indexName: 'docsSearch',
-    // },
+    algolia: {
+      apiKey: 'da00850127593f6f7855786b5ea87ced',
+      indexName: 'lynnjinjie',
+    },
     displayAllHeaders: true,
     nav,
     sidebarDepth: 2, // 侧边栏显示2/
@@ -90,7 +107,7 @@ module.exports = {
     author: {
       // 文章默认的作者信息，可在md文件中单独配置此信息 String | {name: String, link: String}
       name: 'Lynn Jiang', // 必需
-      link: 'https://github.com/lynnjiang', // 可选的
+      link: 'https://github.com/lynnjinjie', // 可选的
     },
     // blogger: {
     //   // 博主信息，显示在首页侧边栏
@@ -140,7 +157,10 @@ module.exports = {
       '@vuepress/pwa',
       {
         serviceWorker: true, // 是否缓存页面
-        updatePopup: true, // 是否允许用户刷新页面
+        updatePopup: {
+          message: '有新的内容',
+          buttonText: '刷新',
+        }, // 是否允许用户刷新页面
       },
     ],
     [
