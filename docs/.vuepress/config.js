@@ -158,8 +158,10 @@ module.exports = {
       {
         serviceWorker: true, // 是否缓存页面
         updatePopup: {
-          message: '有新的内容',
-          buttonText: '刷新',
+          '/': {
+            message: '有新的内容',
+            buttonText: '刷新',
+          },
         }, // 是否允许用户刷新页面
       },
     ],
