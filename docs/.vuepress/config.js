@@ -200,22 +200,5 @@ module.exports = {
         },
       },
     ],
-    [
-      'thirdparty-search',
-      {
-        thirdparty: [
-          // 可选，默认 []
-          {
-            title: '在MDN中搜索', // 在搜索结果显示的文字
-            frontUrl: 'https://developer.mozilla.org/zh-CN/search?q=', // 搜索链接的前面部分
-            behindUrl: '', // 搜索链接的后面部分，可选，默认 ''
-          },
-          {
-            title: '在github中搜索',
-            frontUrl: 'https://github.com/search?q=',
-          },
-        ],
-      },
-    ],
   ],
 }
