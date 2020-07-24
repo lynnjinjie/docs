@@ -74,6 +74,7 @@ module.exports = {
   },
   themeConfig: {
     algolia: {
+      appId: 'BH4D9OD16A',
       apiKey: 'da00850127593f6f7855786b5ea87ced',
       indexName: 'lynnjinjie',
     },
